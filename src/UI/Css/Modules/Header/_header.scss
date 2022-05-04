@@ -1,0 +1,131 @@
+.header {
+  background-color: $gray-33;
+
+  .header__top-header {
+    height: 76px;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    padding: 0 30px;
+  }
+  .header__search-box {
+    height: 32px;
+    width: 366px;
+    background-color: $gray-20;
+    @include flexbox;
+    @include align-items(center);
+
+    .header__search-input{
+        border: none;
+        background-color: transparent;
+        @include flex-grow(1);
+        color: $white;
+        padding: 0 ratio(1);
+
+    }
+    .header__btn-search{
+        border:none;
+        height: 100%;
+        width:30px;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: 20px;
+        background-position: center;
+   
+        // background-color: url('‍./UI/Assets/Images/search.svg');
+    }
+  }
+  .header__top-header-nav {
+    @include flexbox;
+    li {
+      padding-right: 8px;
+       @include fontSize(14px);
+       cursor: pointer;
+    }
+  }
+
+  .header__main {
+    padding: 0 ratio(3.5);
+    min-height: 86px;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    background: #353535;
+    background: -moz-linear-gradient(top, #353535 0%, #262626 100%);
+    background: -webkit-linear-gradient(
+      top,
+      #353535 0%,
+      #262626 100%
+    );
+    background: linear-gradient(to bottom, #353535 0%, #262626 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#262626',GradientType=0 );
+
+    @include for-size(desktop){
+    height:86px
+    };
+  }
+  .header__nav {
+    @include flexbox;
+    height: 100%;
+    overflow: auto;
+
+    li {
+        border-right: 1px solid $gray-17;
+        &:first-child{
+            border-left: 1px solid $gray-17;
+        }
+      a {
+        padding: 0 ratio(2);
+        font-family: Righteous;
+         @include fontSize(18px);
+        @include flexbox;
+        height:100%;
+        @include align-items(center);
+        
+
+      
+
+        &.active, &:hover {
+          background: #262626;
+          background: -moz-linear-gradient(
+            top,
+            #262626 0%,
+            #353535 100%
+          );
+          background: -webkit-linear-gradient(
+            top,
+            #262626 0%,
+            #353535 100%
+          );
+          background: linear-gradient(
+            to bottom,
+            #262626 0%,
+            #353535 100%
+          );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', endColorstr='#353535',GradientType=0 );
+          color:red ;
+        }
+      }
+    }
+  }
+  .header__logo {
+
+    @include flexbox;
+    @include align-items(center);
+    font-family: Righteous;
+    span{
+
+        @include fontSize(26px);
+    }
+
+    label {
+      @include fontSize(14px);
+      height: 18px;
+      background-color: $red;
+      color: $gray-17;
+      padding: 0 ratio(0.5);
+      margin-left: ratio(1);
+    }
+  }
+}

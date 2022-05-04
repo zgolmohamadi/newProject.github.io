@@ -1,0 +1,71 @@
+﻿/*font-family*/
+$fontFamily:  "IRANSans_EnNum";
+
+/*font sizes*/
+$rootFontSize: 16px;
+
+/* spacer */
+$spacer: 8 !default;
+
+$spacers: () !default;
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer,
+    2: (
+      $spacer * 2,
+    ),
+    3: (
+      $spacer * 3,
+    ),
+    4: (
+      $spacer * 4,
+    ),
+    5: (
+      $spacer * 5,
+    ),
+    6: (
+      $spacer * 6,
+    ),
+    7: (
+      $spacer * 7,
+    ),
+    8: (
+      $spacer * 8,
+    ),
+    9: (
+      $spacer * 9,
+    ),
+    10: (
+      $spacer * 10,
+    ),
+  ),
+  $spacers
+);
+
+// Grid breakpoints
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 769px,
+  md: 993px,
+  lg: 1181px,
+) !default;
+
+
+/*colors*/
+$gray-17:#171717;
+$gray-33:#333;
+$gray-27:#272727;
+$gray-28:#282828;
+$gray-23:#232323;
+$gray-20:#202020;
+$gray-30:#303030;
+$gray-2a:#2a2a2a;
+$gray:#8c8c8c;
+
+$red:#e41f43;
+$white:#fff;
+$black:#000;
+

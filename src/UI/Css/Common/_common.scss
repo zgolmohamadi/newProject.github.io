@@ -1,0 +1,246 @@
+﻿html {
+  font-size: $rootFontSize;
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: $rootFontSize !important;
+  color: $white;
+  background-color: $gray-17;
+  direction: ltr;
+}
+
+button,
+select {
+  font-family: $fontFamily;
+}
+
+.container {
+  max-width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  @include flex-grow(1);
+
+  @include for-size("desktop") {
+    width: 98%;
+  }
+
+  @include for-size("desktop-big") {
+    width: 1230px;
+  }
+}
+
+[class*="col-"] {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  position: relative;
+}
+
+@include for-size("phone-only") {
+  /*max-width:767*/
+  @include grid(xs);
+}
+
+@include for-size("not-phone") {
+  /*min-width:768*/
+  @include grid(sm);
+}
+
+@include for-size("desktop") {
+  /*min-width:992px*/
+  @include grid(md);
+}
+
+@include for-size("desktop-big") {
+  /*min-width:1321px*/
+  @include grid(lg);
+}
+
+.row {
+  box-sizing: border-box;
+  @include flexbox;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+a {
+  color: $white;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  margin: 0 0 ratio(3);
+
+  @include for-size("tablet-down") {
+    margin-bottom: ratio(2);
+  }
+}
+
+h1,
+.h1 {
+  @include fontSize(31px);
+}
+
+h2,
+.h2 {
+  @include fontSize(24px);
+}
+
+h3,
+.h3 {
+  @include fontSize(20px);
+}
+
+h4,
+.h4 {
+  @include fontSize(15px);
+}
+
+h5,
+.h5 {
+  @include fontSize(12px);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hidden,
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+
+.dis-flex {
+  @include flexbox;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.hide-in-desktop {
+  @include for-size("desktop") {
+    display: none !important;
+  }
+}
+
+.hide-in-phone {
+  @include for-size(phone-only) {
+    display: none !important;
+  }
+}
+
+.hide-in-not-phone {
+  @include for-size(not-phone) {
+    display: none !important;
+  }
+}
+
+.hide-in-not-desktop {
+  @include for-size("tablet-down") {
+    display: none !important;
+  }
+}
+
+.main-container {
+  min-height: 400px;
+
+  @include for-size("tablet-down") {
+    min-height: 150px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.text-red {
+  color: $red;
+}
+
+.mt--3 {
+  margin-top: 24px;
+}
+
+.pagination {
+  @include flexbox;
+  @include justify-content(center);
+  direction: ltr;
+  li {
+    margin: 0 ratio(0.5);
+  }
+  button {
+    border: none;
+    background-color: $gray-30;
+    height: 32px;
+    cursor: pointer;
+    &.pagination__page-number {
+      min-width: 32px;
+    }
+
+    &.active{
+      background-color: $gray-2a;
+    }
+  }
+
+  .pagination__arrow {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $black;
+      @include fontSize(10px);
+    }
+    &.pagination__arrow--next {
+      padding-right: ratio(2.5);
+      &:after {
+        content: ">>";
+        right: 5px;
+      }
+    }
+    &.pagination__arrow--previous {
+      padding-left: ratio(2.5);
+
+      &:after {
+        content: "<<";
+        left: 5px;
+      }
+    }
+  }
+}

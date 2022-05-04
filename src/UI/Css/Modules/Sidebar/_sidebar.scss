@@ -1,0 +1,15 @@
+@import "../../Variables/variables";
+@import "../../Mixins/mixins";
+.sidebar{
+    background-color: $gray-23;
+
+    li{
+        padding: ratio(2);
+        cursor: pointer;
+
+        &:hover{
+            color: $red;
+            transition: color 0.2s;
+        }
+    }
+}

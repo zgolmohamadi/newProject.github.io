@@ -1,0 +1,6 @@
+.footer{
+    padding:ratio(2) 0 ;
+    color: $gray;
+    text-align: left;
+     @include fontSize(14px);
+}

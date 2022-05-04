@@ -1,0 +1,48 @@
+﻿@font-face {
+  font-family: IRANSans_EnNum;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../Assets/Fonts/IranSans/eot/IRANSansWeb_Bold.eot");
+  src: url("../../Assets/Fonts/IranSans/eot/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../../Assets/Fonts/IranSans/woff2/IRANSansWeb_Bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24
+      +*/ url("../../Assets/Fonts/IranSans/woff/IRANSansWeb_Bold.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../../Assets/Fonts/IranSans/ttf/IRANSansWeb_Bold.ttf") format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: IRANSans_EnNum;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../Assets/Fonts/IranSans/eot/IRANSansWeb.eot");
+  src: url("../../Assets/Fonts/IranSans/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../../Assets/Fonts/IranSans/woff2/IRANSansWeb.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../../Assets/Fonts/IranSans/woff/IRANSansWeb.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../../Assets/Fonts/IranSans/ttf/IRANSansWeb.ttf") format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: IRANSans_FaNum;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../Assets/Fonts/IranSans/faNum/eot/IRANSansWeb_FaNum_Bold.eot");
+  src: url("../../Assets/Fonts/IranSans/faNum/eot/IRANSansWeb_FaNum_Bold.eot") format("embedded-opentype"),
+    url("../../Assets/Fonts/IranSans/faNum/woff2/IRANSansWeb_FaNum_Bold.woff2") format("woff2"),
+    url("../../Assets/Fonts/IranSans/faNum/woff/IRANSansWeb_FaNum_Bold.woff") format("woff"),
+    url("../../Assets/Fonts/IranSans/faNum/ttf/IRANSans_FaNum_Bold.ttf") format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: IRANSans_FaNum;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../Assets/Fonts/IranSans/faNum/eot/IRANSansWeb_FaNum.eot");
+  src: url("../../Assets/Fonts/IranSans/faNum/eot/IRANSansWeb_FaNum.eot?#iefix") format("embedded-opentype"),
+    url("../../Assets/Fonts/IranSans/faNum/woff2/IRANSansWeb_FaNum.woff2") format("woff2"),
+    url("../../Assets/Fonts/IranSans/faNum/woff/IRANSansWeb_FaNum.woff") format("woff"),
+    url("../../Assets/Fonts/IranSans/faNum/ttf/IRANSans_FaNum_Bold.ttf") format("truetype");
+  font-display: fallback;
+}

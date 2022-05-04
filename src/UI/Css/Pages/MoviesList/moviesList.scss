@@ -1,0 +1,79 @@
+@import "../../Modules/Sidebar/sidebar";
+
+.movies-list {
+  background-color: $gray-33;
+  padding: ratio(4);
+  @include flexbox;
+  @include justify-content(space-between);
+}
+.movie-list__covered {
+  height: 412px;
+  margin-bottom: ratio(4);
+
+}
+.movie-list__img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.movie-list__four-coumn {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  & > div {
+    width: calc((100% / 2) - 16px);
+    height: 200px;
+    margin-bottom: ratio(2);
+  }
+}
+.movies-list__left {
+  width: 170px;
+
+  @include for-size(tablet-down){
+  display:none
+  };
+}
+.movies-list__right {
+  width: calc(100% - 170px - 30px);
+  direction: rtl;
+
+  @include for-size(tablet-down){
+  width: 100%
+  };
+}
+.movie-list__title {
+  background-color: $gray-28;
+  text-transform: capitalize;
+  padding: ratio(1.75);
+  font-weight: 500;
+}
+.movie-list__all {
+  margin-top: ratio(1);
+}
+.movie-list__container {
+  @include flexbox;
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+  margin-top: ratio(3);
+}
+.movie-list__card {
+  width: calc(100% / 5 - 32px);
+  height: 330px;
+
+
+  @include for-size(desktop){
+    margin: 0 ratio(2) ratio(2);
+  };
+
+  @include for-size(tablet-down){
+  height:160px;
+  width: calc(100% / 4 - 16px);
+  margin: 0 ratio(1) ratio(2);
+  };
+}
+.movies-list__loading{
+  text-align: center;
+   @include fontSize(18px);
+   direction: ltr;
+}
